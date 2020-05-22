@@ -81,6 +81,7 @@ def main(_argv):
                             img_width_raw)
             cv2.imwrite(save_img_path, img_raw)
         print(f"[*] save result at {save_img_path}")
+        print(len(outputs))
 
     else:
         cam = cv2.VideoCapture(0)
